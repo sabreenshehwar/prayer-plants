@@ -1,0 +1,27 @@
+nav {
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10.6px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50%;
+  /* From https://css.glass */
+  background: rgba(60, 89, 86, 0.61);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(60, 89, 86, 0.3);
+}
+.navlink__container {
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+.navlink {
+  list-style: none;
+  color: #f1f1f1;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 1rem;
+}
+.navlink:hover {
+  color: #89a097;
+}

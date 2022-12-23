@@ -1,0 +1,60 @@
+.about__container {
+  display: flex;
+  place-content: center;
+  height: 100%;
+  z-index: 1;
+  max-width: 100%;
+  background: #445f5c;
+}
+
+.about__wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.about__h1 {
+  font-family: "Archivo", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #89a097;
+  padding: 1.8rem;
+}
+hr {
+  color: #f4f4f4;
+}
+@media screen and (max-width: 768px) {
+  .about__h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about__h1 {
+    font-size: 1.55rem;
+  }
+}
+.pp__info {
+  padding: 2rem;
+  color: #f4f4f4;
+  /* From https://css.glass */
+  background: rgba(145, 163, 155, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(145, 163, 155, 0.3);
+  margin-left: 2rem;
+  opacity: 80%;
+}
+.col-1 {
+  width: 50%;
+  justify-content: flex-end;
+}
+.col-2 {
+  justify-content: flex-start;
+  padding: 2rem;
+  width: 50%;
+  margin-left: -20px;
+}

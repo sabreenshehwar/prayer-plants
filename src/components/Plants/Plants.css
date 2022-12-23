@@ -1,0 +1,168 @@
+/* plant container */
+
+.plants__container {
+  height: 100%;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: url("https://images.pexels.com/photos/213727/pexels-photo-213727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  flex-flow: row wrap;
+}
+
+.plant__wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 0 50px;
+  color: transparent;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .plant__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plant__wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plant__wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+/* plant card */
+
+.plant__card {
+  border-color: #dadfd9;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  justify-content: flex-start;
+  border-radius: 10px;
+  border-width: 0.3rem;
+  width: 20rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(17px);
+}
+.plant__card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .plant__card {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plant__card {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plant__card {
+    width: 18rem;
+  }
+}
+/* plant card content */
+
+.text__wrapper {
+  max-width: 540px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.plant__name {
+  color: #131313;
+  text-transform: capitalize;
+}
+.plant__img {
+  width: 24rem;
+  max-width: 100%;
+  padding: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .plant__img {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plant__img {
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plant__img {
+    width: 18rem;
+  }
+}
+.plant__info {
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #131313;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1px;
+  max-width: 600px;
+  text-transform: lowercase;
+  font-size: small;
+}
+.plant__care {
+  padding-bottom: 1.5rem;
+  color: #0000ff;
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.plant__details {
+  opacity: 100%;
+  text-align: left;
+  font-size: 1rem;
+  color: #131313;
+  font-family: "PT Sans Narrow", sans-serif;
+  max-width: 600px;
+  padding: 10px;
+  border-bottom: #f4f4f4 1px solid;
+}
+@media screen and (max-width: 768px) {
+  .plant__details {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plant__details {
+    font-size: 1rem;
+  }
+}
+
+.donate__link {
+  text-decoration: none;
+  color: #0000ff;
+}

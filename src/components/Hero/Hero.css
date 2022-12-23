@@ -1,0 +1,74 @@
+/* home container */
+
+.home__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 900px;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  margin-top: -80px;
+}
+.home__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.bgvideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+/* home content */
+
+.hero__h1 {
+  width: 18rem;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  color: #f4f4f4;
+  font-family: "WindSong", cursive;
+  padding-bottom: 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.prayerplants {
+  text-decoration: none;
+}
+.hero__p {
+  color: #f4f4f4;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-size: x-small;
+  text-align: center;
+}
+
+.home__content {
+  display: grid;
+  place-content: center;
+  z-index: 3;
+  max-width: 100%;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
