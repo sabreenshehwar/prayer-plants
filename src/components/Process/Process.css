@@ -84,7 +84,7 @@
 
 .process__header {
   padding-bottom: 3rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 .header__p {
   font-family: "PT Sans Narrow", sans-serif;
@@ -99,11 +99,12 @@
 .subheading {
   display: block;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-family: "Archivo", sans-serif;
   color: #131313;
   font-size: smaller;
   padding-bottom: 3rem;
+  padding: 1.2rem;
 }
 
 /* circle insides */
