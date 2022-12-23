@@ -97,7 +97,7 @@ const Process = () => {
                         <p className="info">
                             Wait for order confirmation
                             <br />
-                            (2 buisness days)
+                            (2 business days)
                         </p>
                     </div>
                 </motion.li>
