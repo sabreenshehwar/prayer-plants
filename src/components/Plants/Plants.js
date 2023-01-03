@@ -19,7 +19,7 @@ const Plants = () => {
                         layout="position">
                         monstera deliciosa
                     </motion.h3>
-                    <img src={monstera} />
+                    <img src={monstera} alt="monstera deliciosa" />
                     <details>
                         <motion.summary layout
                             className="plant__info">
@@ -47,7 +47,7 @@ const Plants = () => {
                                 </a>
                             </p>
                             <p className="plant__details">
-                                quantity: one left
+                                one left
                             </p>
                         </motion.div>
                     )}
@@ -58,7 +58,7 @@ const Plants = () => {
                         layout="position">
                         peperomia obtusifolia
                     </motion.h3>
-                    <img src={peperomia} />
+                    <img src={peperomia} alt="peperomia obtusifolia" />
                     <details>
                         <motion.summary
                             layout
@@ -75,7 +75,7 @@ const Plants = () => {
                             transition={{ duration: 1 }}
                         >
                             <p className="plant__details">
-                                plant size
+                                3" planter pot
                             </p>
                             <p className="plant__details">
                                 $10.00 CAD donation
@@ -86,7 +86,7 @@ const Plants = () => {
                                 </a>
                             </p>
                             <p className="plant__details">
-                                quantity: one left
+                                one left
                             </p>
                         </motion.div>
                     )}

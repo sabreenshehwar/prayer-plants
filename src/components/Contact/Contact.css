@@ -23,31 +23,30 @@ header .heading__container {
   margin: 0 auto;
   text-align: center;
   font-family: "Archivo", sans-serif;
-  color: darkgreen;
-  padding-top: 1rem;
-  font-size: 2rem;
+  color: #006400;
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
 }
-.subheader {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "PT Sans Narrow", sans-serif;
-  color: #f4f4f4;
-  font-size: 1rem;
+
+@media screen and (max-width: 480px) {
+  .contact__header {
+    padding: 2rem;
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+  }
 }
+
 .contact__card {
   margin: 0;
   border: none;
   display: block;
   flex-direction: column;
-  margin: auto;
   width: 30rem;
   overflow: hidden;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
   background-color: #8aa197;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
   .contact__card {
@@ -67,6 +66,17 @@ input {
   border-style: solid;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+@media screen and (max-width: 320px) {
+  input {
+    font-size: x-small;
+  }
+}
+
 .form-button {
   display: block;
   justify-content: space-around 10px;

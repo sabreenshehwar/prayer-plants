@@ -34,23 +34,18 @@ export default function Contact() {
         <div>
             <div className="contact__container" id="contact">
                 <h1 className="contact__header">
-                    See something you like? <br /> Want to get involved?
-                    <br /> <br />
+                    Found a plant? <br />
+                    Make it yours.
                 </h1>
-                <h2 className='subheader'>
-                    plant picks ups will be in the ottawa/centretown area
-                    <br />
-                    if you'd like a plant shipped to you, you are responsible for all shipping costs
-                </h2>
                 <div className="form-section">
                     <motion.div className='contact__card'
                         variants={containerVariants}
                         initial="hidden"
                         animate="visible">
-                        <form onSubmit={sendEmail}>
+                        <form onSubmit={sendEmail} autoComplete="off">
                             <input type="text" name="subject" placeholder='Found a plant? Have any questions?' className='subject' />
-                            <input type="text" name="name" placeholder='First name + Last name' className='name' />
-                            <input type="email" name="email" placeholder='Email' className='email' />
+                            <input type="text" name="name" placeholder='John Doe' className='name' />
+                            <input type="email" name="email" placeholder='thoughtsnprayerplants@gmail.com' className='email' />
                             <input type='text' name="message" className='message' />
                             <br /> <br />
                             <button

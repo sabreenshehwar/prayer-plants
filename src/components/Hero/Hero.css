@@ -4,13 +4,29 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 900px;
+  height: 800px;
   align-items: center;
   z-index: 1;
   width: 100%;
   position: relative;
   margin-top: -80px;
 }
+
+@media screen and (max-width: 768px) {
+  .home__container {
+    padding: 0 30px;
+    height: 900px;
+    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home__container {
+    padding: 0 20px;
+    height: 900px;
+    margin-top: -80px;
+  }
+}
+
 .home__bg {
   position: absolute;
   top: 0;

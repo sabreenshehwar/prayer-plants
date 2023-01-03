@@ -142,7 +142,7 @@ const Process = () => {
                             06
                         </h2>
                         <p className="info">
-                            We’ll confirm your donation and have it ready for pick up
+                            We will confirm your donation and have it ready for pick up
                             <br /> <br />
                         </p>
                     </div>

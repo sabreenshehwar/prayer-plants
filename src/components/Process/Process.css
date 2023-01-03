@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
+  background-color: #f4f4f4;
 }
 
 .process__wrapper {
@@ -42,7 +43,7 @@
   width: 16em;
   height: 16em;
   padding: 1rem;
-  background-image: url("https://images.pexels.com/photos/213727/pexels-photo-213727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("../../images/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -51,6 +52,12 @@
   position: relative;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  object-fit: contain;
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  .process {
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -72,6 +79,12 @@
     padding: 1rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .process {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
 
 /* header */
 
@@ -84,7 +97,7 @@
 
 .process__header {
   padding-bottom: 3rem;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
 }
 .header__p {
   font-family: "PT Sans Narrow", sans-serif;
@@ -93,7 +106,6 @@
   padding-top: 1rem;
 }
 .header__p:hover {
-  text-decoration: underline 3px solid #131313;
   color: #91a39b;
 }
 .subheading {
@@ -113,31 +125,44 @@
   place-items: center;
   text-align: center;
   transform: translate(-50%, -50%);
-  position: absolute;
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  backdrop-filter: blur(10.7px);
+  position: absolute;
+  backdrop-filter: blur(5px);
+  background: rgba(138, 161, 151, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+  max-width: 100%;
 }
 
 .numbers {
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 5rem;
-  color: #91a39b; /* fallback for old browsers */
+  font-size: 4.5rem;
+  background: #2c3e50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #91a39b,
-    #385031
+    #445f5c,
+    #2c3e50
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #91a39b, #385031);
+  background: linear-gradient(
+    to right,
+    #445f5c,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .info {
-  color: #000;
+  color: #131313;
   max-width: 100%;
   font-size: 1rem;
   width: -moz-fit-content;
   block-size: fit-content;
+  border-radius: 50%;
+  padding: 0 30px;
 }
