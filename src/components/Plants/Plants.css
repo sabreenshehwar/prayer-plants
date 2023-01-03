@@ -1,7 +1,7 @@
 /* plant container */
 
 .plants__container {
-  height: 900px;
+  height: 100%;
   display: grid;
   flex-direction: column;
   justify-content: center;
@@ -21,9 +21,9 @@
     background-attachment: scroll;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .plants__container {
-    height: 900px;
+    height: 60rem;
     object-fit: contain;
     max-width: 100%;
   }
@@ -44,9 +44,17 @@
     padding: 1rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .plants__container {
+    height: 110rem;
+    object-fit: contain;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
 @media screen and (max-width: 320px) {
   .plants__container {
-    height: 100rem;
+    height: 110rem;
     object-fit: contain;
     max-width: 100%;
     padding: 1rem;
@@ -116,10 +124,20 @@
 
 @media screen and (max-width: 768px) {
   .plant__card {
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .plant__card {
     width: 18rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
+  .plant__card {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 320px) {
   .plant__card {
     width: 18rem;
   }
