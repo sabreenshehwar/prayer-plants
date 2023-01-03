@@ -44,6 +44,14 @@
     padding: 1rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .plants__container {
+    height: 100rem;
+    object-fit: contain;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
 
 .plant__wrapper {
   margin: 0 auto;
